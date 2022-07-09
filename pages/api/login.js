@@ -7,7 +7,7 @@ const Handler = async (req, res)=>{
     if(req.method ==='POST'){
         let user = await User.findOne({"email": req.body.email})
         if (user){            
-            const bytes  = CryptoJS.AES.decrypt(user.password, process.env.JWT_SECRET);
+            const bytes  = CryptoJS.AES.decrypt(user.password, process.env.AES_SECRET);
             let decryptedData = bytes.toString(CryptoJS.enc.Utf8);
             if(req.body.email==user.email && req.body.password==decryptedData){ 
                 var token = jwt.sign({ email:user.email, name:user.name }, process.env.JWT_SECRET, {expiresIn: "2d"});
