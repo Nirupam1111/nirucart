@@ -18,7 +18,7 @@ const Terms = () => {
               The following terminology applies to these Terms and Conditions,
               Privacy Statement and Disclaimer Notice and all Agreements:
               &apos;Client&apos;, &apos;You&apos; and &apos;Your&apos; refers to you, the person log on this
-              website and compliant to the Company's terms and conditions. &apos;The
+              website and compliant to the Company&apos;s terms and conditions. &apos;The
               Company&apos;, &apos;Ourselves&apos;, &apos;We&apos;, &apos;Our&apos; and &apos;Us&apos;, refers to our
               Company. &apos;Party&apos;, &apos;Parties&apos;, or &apos;Us&apos;, refers to both the Client
               and ourselves. All terms refer to the offer, acceptance and
@@ -34,7 +34,7 @@ const Terms = () => {
             <h1 className="mx-10 font-semibold text-2xl">Cookies</h1>
             <p className="px-10 py-2">
               We employ the use of cookies. By accessing nirucart.com, you
-              agreed to use cookies in agreement with the nirucart's Privacy
+              agreed to use cookies in agreement with the nirucart&apos;s Privacy
               Policy. Most interactive websites use cookies to let us retrieve
               the user&apos;s details for each visit. Cookies are used by our website
               to enable the functionality of certain areas to make it easier for
@@ -136,7 +136,7 @@ const Terms = () => {
               any way deceptive; (b) does not falsely imply sponsorship,
               endorsement or approval of the linking party and its products
               and/or services; and (c) fits within the context of the linking
-              party's site.
+              party&apos;s site.
             </p>
             <div>
               <p className="ml-10 mb-1">

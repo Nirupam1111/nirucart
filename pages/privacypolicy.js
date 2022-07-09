@@ -106,7 +106,7 @@ const Privacypolicy = () => {
                 <li>
                   <p>
                     <strong>Website</strong> refers to nirucart, accessible
-                    from{" "}
+                    from
                     <a
                       href="https://www.nirucart.com"
                       rel="external nofollow noopener noreferrer"
@@ -225,8 +225,8 @@ const Privacypolicy = () => {
                   activity on our Service. Flash Cookies are not managed by the
                   same browser settings as those used for Browser Cookies. For
                   more information on how You can delete Flash Cookies, please
-                  read "Where can I change the settings for disabling, or
-                  deleting local shared objects?" available at
+                  read &apos;Where can I change the settings for disabling, or
+                  deleting local shared objects?&apos; available at
                   <a
                     href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
                     rel="external nofollow noopener noreferrer"
@@ -347,7 +347,7 @@ const Privacypolicy = () => {
                   <p>
                     <strong>To contact You:</strong> To contact You by email,
                     telephone calls, SMS, or other equivalent forms of
-                    electronic communication, such as a mobile application's
+                    electronic communication, such as a mobile application&apos;s
                     push notifications regarding updates or informative
                     communications related to the functionalities, products or
                     contracted services, including the security updates, when
