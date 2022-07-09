@@ -1,131 +1,9 @@
-// import React from 'react'
-// import Link from 'next/link'
-
-// const Mugs = () => {
-//   return (
-//     <div>
-//       <section className="text-gray-400  body-font">
-//   <div className="container px-5 py-24 mx-auto">
-//     <div className="flex flex-wrap -m-4">
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">wear The Code</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">wear The Code</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">wear The Code</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">wear The Code</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">wear The Code</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">Shooting Stars</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">Neptune</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
-//         <a className="block relative rounded overflow-hidden">
-//           <img alt="ecommerce" className="m-auto md:m-0 h.[30vh] md:h.[36vh]" src="https://m.media-amazon.com/images/I/41UFaecbUWL._SX425_.jpg" />
-//         </a>
-//         <div className="text-center">
-//           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
-//           <h2 className="text-white title-font text-lg font-medium">The 400 Blows</h2>
-//           <p className="mt-1">₹499</p>
-//           <p className="mt-1">S, M, L, XL, XXL</p>
-//         </div>
-//       </div>
-//       </Link>
-//     </div>
-//   </div>
-// </section>
-//     </div>
-//   )
-// }
-
-// export default Mugs
-
-
-
-
-
-
-
-
-
 import React from 'react'
 import Link from 'next/link'
 import Product from '../models/Product'
 import mongoose from 'mongoose'
 
-const mugs = ({products}) => {
+const Mugs = ({products}) => {
   // console.log(products);
   return (
     <div className="min-h-screen">
@@ -182,4 +60,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default mugs
+export default Mugs

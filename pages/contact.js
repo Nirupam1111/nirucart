@@ -1,6 +1,6 @@
 import React from 'react'
 
-const contact = () => {
+const Contact = () => {
   return (
     <div className="min-h-screen">
       <section className="text-gray-600 body-font">
@@ -34,4 +34,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

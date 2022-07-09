@@ -4,7 +4,7 @@ import { BsFillBagCheckFill } from 'react-icons/bs';
 import Link from 'next/link'
 import {useRouter} from 'next/router'
 
-const checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) => {
+const Checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) => {
   const router = useRouter();
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -202,4 +202,4 @@ const checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
     </div>
   )
 }
-export default checkout
+export default Checkout

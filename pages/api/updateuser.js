@@ -3,7 +3,7 @@ import User from '../../models/User'
 import connectDb from '../../middleware/mongoose'
 import jsonwebtoken from 'jsonwebtoken'
 
-const handler = async (req, res)=>{
+const Handler = async (req, res)=>{
     if(req.method =='POST'){
         const token = req.body.token;
         const user = jsonwebtoken.verify(token, process.env.JWT_SECRET)
@@ -15,4 +15,4 @@ const handler = async (req, res)=>{
     
 }
   
-export default connectDb(handler);
+export default connectDb(Handler);

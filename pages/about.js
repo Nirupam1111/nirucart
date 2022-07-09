@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const about = () => {
+const About = () => {
   return (
     <div className="min-h-screen">
       <section className="text-gray-600 body-font">
@@ -11,10 +11,10 @@ const about = () => {
       <h1 className="sm:text-2xl text-3xl font-medium title-font mb-4 text-gray-900">Welcome to nirucart.com
       </h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-      This website is an attempt to deliver amazing products at a good and reasonable price. This entire website was built by me, a new web-developer as a NextJs project. This website is powerd by NextJs + React + MongoDB for storing the data. For the server side logic, we use NextJs built in SSR. And the Project is inspired by Youtube vidio, Channel name 'CodeWithHarry'. If you are curious enough to find how this website was build, checkout Nextjs playlist from CodeWithHarry on YouTube and if you are not, buy yourself a trendy geek Tshirt from nirucart :) !
+      This website is an attempt to deliver amazing products at a good and reasonable price. This entire website was built by me, a new web-developer as a NextJs project. This website is powerd by NextJs + React + MongoDB for storing the data. For the server side logic, we use NextJs built in SSR. And the Project is inspired by Youtube vidio, Channel name &apos;CodeWithHarry&apos;. If you are curious enough to find how this website was build, checkout Nextjs playlist from CodeWithHarry on YouTube and if you are not, buy yourself a trendy geek Tshirt from nirucart :) !
       </p>
     </div>
-    <a href="/tshirts" className="flex mx-auto mt-16 text-white bg-sky-500 w-40 border-0 py-2 px-8 focus:outline-none hover:bg-sky-600 rounded text-lg"><span className="text-sm">Start Shopping</span></a>
+    <Link href={"/contact"}><a className="flex mx-auto mt-16 text-white bg-sky-500 w-40 border-0 py-2 px-8 focus:outline-none hover:bg-sky-600 rounded text-lg"><span className="text-sm">Start Shopping</span></a></Link>
 
     <div className="mt-20 w-full">
     <h1 className="sm:text-2xl text-3xl font-medium title-font mb-4 text-gray-900">About nirucart</h1>
@@ -30,4 +30,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

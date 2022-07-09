@@ -1,6 +1,6 @@
 import React from "react";
 
-const privacypolicy = () => {
+const Privacypolicy = () => {
   return (
     <>
       <div className="min-h-screen">
@@ -42,8 +42,8 @@ const privacypolicy = () => {
                 </li>
                 <li>
                   <p>
-                    <strong>Company</strong> (referred to as either "the
-                    Company", "We", "Us" or "Our" in this Agreement) refers to
+                    <strong>Company</strong> (referred to as either &apos;the
+                    Company&apos;, &apos;We&apos;, &apos;Us&apos; or &apos;Our&apos; in this Agreement) refers to
                     nirucart, Panskura, West Bengal.
                   </p>
                 </li>
@@ -160,7 +160,7 @@ const privacypolicy = () => {
                 Usage Data is collected automatically when using the Service.
               </p>
               <p>
-                Usage Data may include information such as Your Device"s
+                Usage Data may include information such as Your Device&apos;s
                 Internet Protocol address (e.g. IP address), browser type,
                 browser version, the pages of our Service that You visit, the
                 time and date of Your visit, the time spent on those pages,
@@ -186,13 +186,13 @@ const privacypolicy = () => {
                 If You decide to register through or otherwise grant us access
                 to a Third-Party Social Media Service, We may collect Personal
                 data that is already associated with Your Third-Party Social
-                Media Service's account, such as Your name, Your email address,
+                Media Service&apos;s account, such as Your name, Your email address,
                 Your activities or Your contact list associated with that
                 account.
               </p>
               <p>
                 You may also have the option of sharing additional information
-                with the Company through Your Third-Party Social Media Service's
+                with the Company through Your Third-Party Social Media Service&apos;s
                 account. If You choose to provide such information and Personal
                 Data, during registration or otherwise, You are giving the
                 Company permission to use, share, and store it in a manner
@@ -226,7 +226,7 @@ const privacypolicy = () => {
                   same browser settings as those used for Browser Cookies. For
                   more information on how You can delete Flash Cookies, please
                   read "Where can I change the settings for disabling, or
-                  deleting local shared objects?" available at{" "}
+                  deleting local shared objects?" available at
                   <a
                     href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
                     rel="external nofollow noopener noreferrer"
@@ -247,10 +247,10 @@ const privacypolicy = () => {
                 </li>
               </ul>
               <p>
-                Cookies can be "Persistent" or "Session" Cookies. Persistent
+                Cookies can be &apos;Persistent&apos; or &apos;Session&apos; Cookies. Persistent
                 Cookies remain on Your personal computer or mobile device when
                 You go offline, while Session Cookies are deleted as soon as You
-                close Your web browser. Learn more about cookies:{" "}
+                close Your web browser. Learn more about cookies:
                 <a
                   href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking"
                   target="_blank"
@@ -461,7 +461,7 @@ const privacypolicy = () => {
               </h2>
               <p>
                 Your information, including Personal Data, is processed at the
-                Company's operating offices and in any other places where the
+                Company&apos;s operating offices and in any other places where the
                 parties involved in the processing are located. It means that
                 this information may be transferred to — and maintained on —
                 computers located outside of Your state, province, country or
@@ -529,7 +529,7 @@ const privacypolicy = () => {
                 use commercially acceptable means to protect Your Personal Data,
                 We cannot guarantee its absolute security.
               </p>
-              <h2 className="my-2 font-semibold text-3xl">Children's Privacy</h2>
+              <h2 className="my-2 font-semibold text-3xl">Children&apos;s Privacy</h2>
               <p>
                 Our Service does not address anyone under the age of 13. We do
                 not knowingly collect personally identifiable information from
@@ -543,7 +543,7 @@ const privacypolicy = () => {
               <p>
                 If We need to rely on consent as a legal basis for processing
                 Your information and Your country requires consent from a
-                parent, We may require Your parent's consent before We collect
+                parent, We may require Your parent&apos;s consent before We collect
                 and use that information.
               </p>
               <h2 className="my-2 font-semibold text-2xl">
@@ -552,7 +552,7 @@ const privacypolicy = () => {
               <p>
                 Our Service may contain links to other websites that are not
                 operated by Us. If You click on a third party link, You will be
-                directed to that third party's site. We strongly advise You to
+                directed to that third party&apos;s site. We strongly advise You to
                 review the Privacy Policy of every site You visit.
               </p>
               <p>
@@ -571,7 +571,7 @@ const privacypolicy = () => {
               <p>
                 We will let You know via email and/or a prominent notice on Our
                 Service, prior to the change becoming effective and update the
-                "Last updated" date at the top of this Privacy Policy.
+                &apos;Last updated&apos; date at the top of this Privacy Policy.
               </p>
               <p>
                 You are advised to review this Privacy Policy periodically for
@@ -585,7 +585,7 @@ const privacypolicy = () => {
               </p>
               <ul>
                 <li>
-                  By visiting this page on our website:{" "}
+                  By visiting this page on our website:
                   <a
                     href="https://www.nirucart.com/privacy"
                     rel="external nofollow noopener noreferrer"
@@ -603,4 +603,4 @@ const privacypolicy = () => {
   );
 };
 
-export default privacypolicy;
+export default Privacypolicy;

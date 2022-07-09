@@ -5,7 +5,7 @@ import Product from '../../models/Product'
 import connectDb from '../../middleware/mongoose'
 import pincodes from '../../pincodes.json'
 
-const handler = async (req, res)=>{
+const Handler = async (req, res)=>{
   if (req.method === "POST") {
     // console.log(req.body);
 
@@ -111,4 +111,4 @@ const handler = async (req, res)=>{
     // Handle any other HTTP method
   }
 }
-export default connectDb(handler);
+export default connectDb(Handler);

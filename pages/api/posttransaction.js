@@ -4,7 +4,7 @@ import Product from '../../models/Product'
 import connectDb from '../../middleware/mongoose'
 import crypto from 'crypto';
 
-const handler = async (req, res)=>{
+const Handler = async (req, res)=>{
   try {
 		const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
 			req.body;
@@ -32,7 +32,7 @@ const handler = async (req, res)=>{
 	}
 }
 
-export default connectDb(handler);
+export default connectDb(Handler);
 
 
 

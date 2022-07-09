@@ -3,7 +3,7 @@ import {ToastContainer, toast} from 'react-toastify'
 import {useRouter} from 'next/router'
 import 'react-toastify/dist/ReactToastify.css';
 
-const myaccount = ({ user }) => {
+const Myaccount = ({ user }) => {
   const router = useRouter();
   useEffect(() => {
     // console.log(user);
@@ -175,7 +175,7 @@ const myaccount = ({ user }) => {
         <div className="px-2 w-1/2">
           <div className="mb-4">
             <label htmlFor="email" className="leading-7 text-sm text-gray-600">
-              Email (Can't be Updated)
+              Email (Can&apos;t be Updated)
             </label>
             {user && user.value ? (
               <input
@@ -333,4 +333,4 @@ const myaccount = ({ user }) => {
   );
 };
 
-export default myaccount;
+export default Myaccount;

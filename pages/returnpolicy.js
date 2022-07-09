@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const returnpolicy = () => {
+const Returnpolicy = () => {
   return (
     <div className="min-h-screen">
       <section className="text-gray-600 body-font">
@@ -41,4 +41,4 @@ const returnpolicy = () => {
   )
 }
 
-export default returnpolicy
+export default Returnpolicy

@@ -3,7 +3,7 @@ import connectDb from '../../middleware/mongoose'
 var CryptoJS = require("crypto-js");
 var jwt = require('jsonwebtoken');
 
-const handler = async (req, res)=>{
+const Handler = async (req, res)=>{
     if(req.method ==='POST'){
         let user = await User.findOne({"email": req.body.email})
         if (user){            
@@ -23,5 +23,5 @@ const handler = async (req, res)=>{
     }
 }
 
-export default connectDb(handler);
+export default connectDb(Handler);
   

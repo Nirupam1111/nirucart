@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Product from '../models/Product'
 import mongoose from 'mongoose'
 
-const stickers = ({products}) => {
+const Stickers = ({products}) => {
   // console.log(products);
   return (
     <div className="min-h-screen">
@@ -59,4 +59,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default stickers
+export default Stickers

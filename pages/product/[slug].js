@@ -120,7 +120,7 @@ const Post = ({addToCart,buyNow,product,variants, error}) => {
           <button onClick={checkServiceability} className="flex ml-14 text-white bg-sky-500 border-0 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded">Check</button>
         </div>
         {(!service && service != null) &&<div className="text-red-700 text-sm mt-3">
-          Sorry! we don't deliver to this pincode yet
+          Sorry! we don&apos;t deliver to this pincode yet
         </div>}
         {(service && service != null) &&<div className="text-green-700 text-sm mt-3">
           Yay! This pincode is serviceble

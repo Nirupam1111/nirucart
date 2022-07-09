@@ -3,7 +3,7 @@ import {useRouter} from 'next/router'
 import Order from "../models/Order";
 import mongoose from "mongoose";
 
-const myOrder = ({order, clearCart}) => {
+const MyOrder = ({order, clearCart}) => {
   let router = useRouter();
   useEffect(() => {
     if(!router.query.id){
@@ -70,4 +70,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default myOrder
+export default MyOrder

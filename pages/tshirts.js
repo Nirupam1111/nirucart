@@ -4,7 +4,7 @@ import Product from '../models/Product'
 import connectDb from '../middleware/mongoose'
 import mongoose from 'mongoose'
 
-const tshirts = ({products}) => {
+const Tshirts = ({products}) => {
   // console.log(products);
   return (
     <div className="min-h-screen">
@@ -75,4 +75,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default tshirts
+export default Tshirts
