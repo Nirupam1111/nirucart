@@ -9,7 +9,7 @@ const Handler = async (req, res)=>{
         const token = req.body.token;
         const user = jsonwebtoken.verify(token, process.env.JWT_SECRET)
         const findUser = await User.findOne({email: user.email});
-        const bytes  = CryptoJS.AES.decrypt(findUser.password, 'secret12321');
+        const bytes  = CryptoJS.AES.decrypt(findUser.password, process.env.AES_SECRET);
         let decryptedData = bytes.toString(CryptoJS.enc.Utf8);
 
         if(req.body.password == decryptedData && req.body.npassword == req.body.cpassword){
