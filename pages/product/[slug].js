@@ -57,7 +57,7 @@ const Post = ({addToCart,buyNow,product,variants, error}) => {
   }
 
   const refreshVariants=(newcolor, newsize)=>{
-    let url = `${process.env.PORT}/product/${variants[newcolor][newsize]['slug']}`;
+    let url = `/product/${variants[newcolor][newsize]['slug']}`;
     router.push(url);
   }
 
