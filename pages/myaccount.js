@@ -18,7 +18,7 @@ const myaccount = ({ user }) => {
 
   const fetchData = async (token) => {
     let data = { token: token };
-    const a = await fetch(`${process.env.PORT}/api/getuser`, {
+    const a = await fetch(`/api/getuser`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -88,7 +88,7 @@ const myaccount = ({ user }) => {
 
   const handleUserSubmit = async () => {
     let data = { token: user.value, name, phone, pincode, address };
-    const a = await fetch(`${process.env.PORT}/api/updateuser`, {
+    const a = await fetch(`/api/updateuser`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -107,7 +107,7 @@ const myaccount = ({ user }) => {
 
   const handlePasswordSubmit = async () => {
     let data = { token: user.value, password, npassword, cpassword };
-    const a = await fetch(`${process.env.PORT}/api/updatepassword`, {
+    const a = await fetch(`/api/updatepassword`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

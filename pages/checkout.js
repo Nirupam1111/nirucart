@@ -47,7 +47,7 @@ const checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
 
   const fetchData = async (token) => {
     let data = { token: token };
-    const a = await fetch(`${process.env.PORT}/api/getuser`, {
+    const a = await fetch(`/api/getuser`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -62,7 +62,7 @@ const checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
   };
 
   const getPincode = async (pin)=>{
-    let pins = await fetch(`${process.env.PORT}/api/pincode`)
+    let pins = await fetch(`/api/pincode`)
     let pinJson = await pins.json()
     if(Object.keys(pinJson).includes(pin)){
       setCity(pinJson[pin][0])
@@ -79,7 +79,7 @@ const checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
       return;
     }
     // Make API call to the serverless API
-    const data = await fetch(`${process.env.PORT}/api/pretransaction`, 
+    const data = await fetch(`/api/pretransaction`, 
     { method: "POST",
       headers: {'Content-Type': 'application/json',},
       body: JSON.stringify({subTotal, cart, oid, email: user.email, name, address, pincode, phone, city, state})
@@ -93,7 +93,7 @@ const checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
       amount: data.amount,
       order_id: data.id,
       description: "Thank you for purchasing",
-      callback_url: `${process.env.PORT}/api/posttransaction`,
+      callback_url: `/api/posttransaction`,
       prefill: {
         name: "nirucart.com",
         email: "nirupamsur10@gmail.com",

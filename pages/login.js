@@ -29,7 +29,7 @@ const login = () => {
     e.preventDefault()
     const data = {email, password}
 
-    let res = await fetch(`${process.env.PORT}/api/login`, {
+    let res = await fetch(`/api/login`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)
@@ -51,7 +51,7 @@ const login = () => {
         progress: undefined,
         });
         setTimeout(() => {
-          router.push(`${process.env.PORT}`)
+          router.push(`/`)
         }, 2000);
     }else{
       toast.error(response.error, {

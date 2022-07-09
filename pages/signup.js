@@ -31,7 +31,7 @@ const signup = () => {
     e.preventDefault()
     const data = {name, email, password}
 
-    let res = await fetch(`${process.env.PORT}/api/signup`, {
+    let res = await fetch(`/api/signup`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)

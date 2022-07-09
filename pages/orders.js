@@ -8,7 +8,7 @@ const orders = () => {
 
     useEffect(() => {
       const fetchOrders = async ()=>{
-        const a = await fetch(`${process.env.PORT}/api/myorders`, {
+        const a = await fetch(`/api/myorders`, {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
