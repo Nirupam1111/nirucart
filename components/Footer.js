@@ -56,6 +56,9 @@ const Footer = () => {
           <li><Link href={"/terms"}>
             <a className="text-gray-600 hover:text-gray-800">Terms and Conditions</a>
           </Link></li>
+          <li><Link href={"/shippingpolicy"}>
+            <a className="text-gray-600 hover:text-gray-800">Shipping Policy</a>
+          </Link></li>
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
