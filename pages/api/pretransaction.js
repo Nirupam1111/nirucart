@@ -6,6 +6,7 @@ import connectDb from '../../middleware/mongoose'
 import pincodes from '../../pincodes.json'
 
 const Handler = async (req, res)=>{
+
   if (req.method === "POST") {
     // console.log(req.body);
 
@@ -16,10 +17,10 @@ const Handler = async (req, res)=>{
     }
 
     //check if pincode is serviceble
-    if(!Object.keys(pincodes).includes(req.body.pincode)){
-      res.status(200).json({success: false, "error": "The pincode is not serviceble!", cartClear: false})
-      return
-    }
+    // if(!Object.keys(pincodes).includes(req.body.pincode)){
+    //   res.status(200).json({success: false, "error": "The pincode is not serviceble!", cartClear: false})
+    //   return
+    // }
 
     //check if the cart is tempared with 
     let sumTotal = 0;

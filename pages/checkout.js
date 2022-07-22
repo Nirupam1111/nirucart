@@ -11,6 +11,7 @@ const Checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
   const [phone, setPhone] = useState('')
   const [address, setAddress] = useState('')
   const [pincode, setPincode] = useState('')
+  const [showPinMessage, setShowPinMessage] = useState(0)
   // const [disabled, setDisabled] = useState(false)
   const [city, setCity] = useState('')
   const [state, setState] = useState('')
@@ -45,6 +46,14 @@ const Checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
     }
   }, [])
 
+  useEffect(() => {
+    if(state.length<1 && pincode.length !== 0){
+      setShowPinMessage(1);
+    }else{
+      setShowPinMessage(0)
+    }
+  })
+
   const fetchData = async (token) => {
     let data = { token: token };
     const a = await fetch(`/api/getuser`, {
@@ -58,16 +67,21 @@ const Checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
     setAddress(res.address);
     setPincode(res.pincode);
     setPhone(res.phone);
-    getPincode(res.pincode);
+    if(res.pincode !== ""){
+      getPincode(res.pincode);
+    }
   };
 
   const getPincode = async (pin)=>{
-    let pins = await fetch(`/api/pincode`)
+    let pins = await fetch(`/api/pincode?pin=${pin}`)
     let pinJson = await pins.json()
-    if(Object.keys(pinJson).includes(pin)){
-      setCity(pinJson[pin][0])
-      setState(pinJson[pin][1])
-    }
+    // if(Object.keys(pinJson).includes(pin)){
+    //   setCity(pinJson[pin][0])
+    //   setState(pinJson[pin][1])
+    // }
+      // console.log(pinJson);
+      setCity(pinJson.Division)
+      setState(pinJson.State)
   }
 
   const makePayment = async () => {
@@ -165,6 +179,7 @@ const Checkout = ({cart, user, clearCart, addToCart, removeFromCart, subTotal}) 
         <div className="mb-4">
         <label htmlFor="pincode" className="leading-7 text-sm text-gray-600">Pincode</label>
         <input placeholder="Enter Your Zipcode" onChange={handleChange} value={pincode} type="text" id="pincode" name="pincode" className="w-full bg-white rounded border border-gray-300 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+        {showPinMessage === 0 ? "" : <p className="text-pink-600 text-sm">This Pincode is not Available</p>}
       </div>
         </div>
         </div>
