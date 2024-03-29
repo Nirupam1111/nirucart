@@ -16,7 +16,7 @@ export default function Home() {
       {/* <Navbar /> */}
       <div className="flex flex-wrap m-8 mt-8 mb-20 sm:flex-col lg:flex-row items-center text-center">
       <div className="lg:w-1/2">
-        <p className="m-8 text-center text-2xl font-mono leading-10 font-bold">&quot;Hey developers, now get your favourite ecessories here on <span className="text-3xl text-sky-500"><Link href={"/"}><a>nirucart.com</a></Link></span>.&quot; </p>
+        <p className="m-8 text-center text-2xl font-mono leading-10 font-bold">&quot;Hey developers, now get your favourite accessories here on <span className="text-3xl text-sky-500"><Link href={"/"}><a>nirucart.com</a></Link></span>.&quot; </p>
         </div>
         <div className="lg:w-1/2">
         <img className="" src="/home.jpg" alt="" />
